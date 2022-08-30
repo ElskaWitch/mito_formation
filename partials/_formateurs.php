@@ -19,6 +19,8 @@ require_once("sql/selectAllFormateurs-sql.php");
                 <th>Contrat</th>
                 <th>Formation</th>
                 <th>Voir</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +46,8 @@ require_once("sql/selectAllFormateurs-sql.php");
                                 <img src="img/loupe.png" alt="loupe" class="w-4">
                             </a>
                         </td>
+                        <td><a href="modifierFormateurs.php?id=<?= $formateur["id"] ?>&nom=<?= $formateur["nom"] ?>" class="btn btn-success text-white">Modifier</a></td>
+                        <td><?php include("partials/_modal-formateurs.php") ?></td>
                     </tr>
                 <?php endforeach ?>
             <?php } ?>
@@ -63,6 +67,8 @@ require_once("sql/selectAllFormateurs-sql.php");
                 <th>Contrat</th>
                 <th>Formation</th>
                 <th>Voir</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
             </tr>
         </tfoot>
     </table>

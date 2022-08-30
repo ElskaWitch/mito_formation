@@ -12,7 +12,7 @@
                 <label for="<?= $stagiaire["id"] ?>" class="btn">Non</label>
             </div>
             <div class="modal-action">
-                <label for="<?= $stagiaire["id"] ?>" class="btn btn-primary"><a href="delete.php?id=<?= $stagiaire["id"] ?>&nom=<?= $stagiaire["name"] ?>">Oui</a></label>
+                <label for="<?= $stagiaire["id"] ?>" class="btn btn-primary"><a href="deleteStagiaires.php?id=<?= $stagiaire["id"] ?>&nom=<?= $stagiaire["nom"] ?>">Oui</a></label>
             </div>
         </div>
     </div>

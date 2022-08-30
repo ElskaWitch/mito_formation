@@ -1,5 +1,6 @@
 <?php
 require_once("helpers/pdo.php");
+include("helpers/functions.php");
 require_once("sql/selectAllStagiaires-sql.php");
 ?>
 <div class="overflow-x-auto w-full py-20 ">
@@ -19,6 +20,8 @@ require_once("sql/selectAllStagiaires-sql.php");
                 <th>Formation</th>
                 <th>Formateur</th>
                 <th>Voir</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
             </tr>
         </thead>
         <tbody>
@@ -45,6 +48,8 @@ require_once("sql/selectAllStagiaires-sql.php");
                                 <img src="img/loupe.png" alt="loupe" class="w-4">
                             </a>
                         </td>
+                        <td><a href="modifierStagiaires.php?id=<?= $stagiaire["id"] ?>&nom=<?= $stagiaire["nom"] ?>" class="btn btn-success text-white">Modifier</a></td>
+                        <td><?php include("partials/_modal-stagiaires.php") ?></td>
                     </tr>
                 <?php endforeach ?>
             <?php } ?>
@@ -65,6 +70,8 @@ require_once("sql/selectAllStagiaires-sql.php");
                 <th>Formation</th>
                 <th>Formateur</th>
                 <th>Voir</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
             </tr>
         </tfoot>
     </table>

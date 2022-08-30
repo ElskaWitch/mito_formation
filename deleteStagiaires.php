@@ -5,7 +5,7 @@ include("helpers/functions.php");
 // include PDO pour la connexion BDD
 require_once("helpers/pdo.php");
 // requette delete
-require_once("sql/delete-sql-stagiaires.php");
+require_once("sql/delete-stagiaires-sql.php");
 
 //6- redirection
 $_SESSION["success"] = "Le stagiaires es bien supprimer.";
