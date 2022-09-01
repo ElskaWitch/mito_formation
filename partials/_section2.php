@@ -1,5 +1,5 @@
-<div class="px-4 2xl:px-32 pb-12">
-    <h2 class="text-end underline text-4xl font-bold py-10">Nos Formations</h2>
+<div class="px-4 2xl:px-32 pb-12 ">
+    <h2 class=" underline text-4xl font-bold py-10 text-center">Nos Formations</h2>
     <?php
     $description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste accusamus velit voluptatibus veniam maiores consequuntur aperiam necessitatibus cum, doloribus id harum sapiente magni! Eum et ea obcaecati inventore ad eveniet.";
     $formation = "Développeur web";

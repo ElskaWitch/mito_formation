@@ -1,4 +1,4 @@
-<div class="text-center">
+<div class="text-center py-20">
     <h1 class=" font-bold text-4xl py-10 underline">Quelques Infos</h1>
     <div class=" pb-10 font-semibold">
         <p>Nos horaires :<span class="text-blue-400"> 9h-17h tous les jours</span></p>

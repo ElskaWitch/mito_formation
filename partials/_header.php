@@ -19,7 +19,7 @@
             <a class=" btn btn-ghost normal-case text-xl" href="index.php"><span class="text-red-500">M</span>ito_<span class="text-red-500">F</span><span class="hidden sm:contents">ormation</span></a>
         </div>
         <div class="flex-none font-semibold">
-            <ul class="menu menu-horizontal p-0">
+            <ul class="menu menu-horizontal p-0 z-50">
                 <li tabindex="0">
                     <a>
                         Menu
