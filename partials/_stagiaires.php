@@ -3,8 +3,8 @@ require_once("helpers/pdo.php");
 include("helpers/functions.php");
 require_once("sql/selectAllStagiaires-sql.php");
 ?>
-<div class="overflow-x-auto w-full py-20 ">
-    <table class="table w-full ">
+<div class="overflow-x-auto max-w-screen-lg pt-20 mr-12 ">
+    <table class="table w-auto ">
         <!-- head -->
         <thead>
             <tr>
@@ -34,7 +34,7 @@ require_once("sql/selectAllStagiaires-sql.php");
                     <tr class="">
                         <th class="text-red-500"><?= $index++ ?></th>
                         <td><img src="<?= $stagiaire['photo'] ?>" alt="" class="w-4"></td>
-                        <td class="hover:text-blue-500"><a href="show.php?id=<?= $stagiaire['id'] ?>&nom=<?= $stagiaire['nom'] ?>"><?= $stagiaire['nom'] ?></a></td>
+                        <td class="hover:text-blue-500"><a href="show-stagiaires.php?id=<?= $stagiaire['id'] ?>&nom=<?= $stagiaire['nom'] ?>"><?= $stagiaire['nom'] ?></a></td>
                         <td><?= $stagiaire['prenom'] ?></td>
                         <td><?= $stagiaire['email'] ?></td>
                         <td><?= $stagiaire['tel'] ?></td>

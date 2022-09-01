@@ -1,9 +1,7 @@
-<div class="flex flex-col-reverse 2xl:flex-row py-14 2xl:py-8 space-x-8">
-    <div class="">
-        <p class="text-2xl py-4 font-semibold underline"><?= $formation ?></p>
-        <p class=""><?= $description ?></p>
-    </div>
-    <div class="">
-        <img src="img/<?= $img ?>" alt="" class="">
+<div class="card xl:w-96 bg-base-100 shadow-xl">
+    <figure><img src="img/<?= $img ?>" alt="" class=""></figure>
+    <div class="card-body">
+        <h2 class="card-title"><?= $formation ?></h2>
+        <p><?= $description ?></p>
     </div>
 </div>
