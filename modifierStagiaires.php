@@ -7,6 +7,10 @@ include("helpers/functions.php");
 // include PDO pour la connexion BDD
 require_once("helpers/pdo.php");
 
+$error = [];
+$errorMessage = "<span class=text-red-500>*Ce champs est obligatoire</span>";
+// variable success
+$success = false;
 
 if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
     // 2- je nettoie mon id contre xss
